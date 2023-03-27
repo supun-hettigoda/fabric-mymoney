@@ -1,0 +1,1208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.4">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 15.0px 0.0px; text-align: justify; font: 12.0px Helvetica; color: #000000; color: rgba(0, 0, 0, 0.87); -webkit-text-stroke: rgba(0, 0, 0, 0.87)}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; color: #000000; color: rgba(0, 0, 0, 0.87); -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Light'; color: #000000; color: rgba(0, 0, 0, 0.87); -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Light'; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p7 {margin: 0.0px 0.0px 15.0px 0.0px; text-align: justify; font: 12.0px Helvetica; color: #000000; color: rgba(0, 0, 0, 0.87); -webkit-text-stroke: rgba(0, 0, 0, 0.87); min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 10.0px Helvetica; font-kerning: none}
+    table.t1 {margin: 25.0px 0.0px 25.0px 0.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #6d6d6d #6d6d6d #6d6d6d #6d6d6d; border-collapse: collapse}
+    td.td1 {width: 239.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+    td.td2 {width: 238.7px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+    td.td3 {width: 219.1px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+    td.td4 {width: 1155.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+    td.td5 {width: 415.7px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+    td.td6 {width: 192.8px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+    td.td7 {width: 176.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+    td.td8 {width: 533.7px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+    td.td9 {width: 173.8px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+    td.td10 {width: 151.4px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+    td.td11 {width: 144.7px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 12.0px 15.0px 12.0px 15.0px}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 30.0px 0.0px; font: 41.2px Helvetica; color: #000000; color: rgba(0, 0, 0, 0.87); -webkit-text-stroke: rgba(0, 0, 0, 0.87)"><span class="s1"><b>MyMoney</b></span></h1>
+<p class="p2"><span class="s1"><b>The Challenge</b><br>
+<br>
+You work at ‘MyMoney’, a platform that lets investors track their consolidated portfolio value across equity, debt, and gold.<br>
+<br>
+Portfolio rebalancing is an activity done to reduce the gains from one asset class and investing them in another, to ensure that the desired weight for each asset class doesn't deviate because of market gains/losses.<br>
+<br>
+If we consider an investor who has invested in an equity fund, a debt/gilt fund, and gold, over the course of 5 years, with a desired weight of 60%, 30% and 10%, without rebalancing, the portfolio would look like this:<br>
+</span></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3"><span class="s1"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4"><span class="s1"><b>Equity</b></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1"><b>Debt</b></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1"><b>Gold</b></span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4"><span class="s1"><b>Total</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1">Dec-05</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">6,00,000</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">3,00,000</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">1,00,000</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">10,00,000</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">60%</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">30%</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">10%</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1">Dec-06</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">8,51,584</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">3,13,305</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">1,19,384</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">12,84,836</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">66%</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">25%</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">9%</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1">Dec-07</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">13,35,324</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">3,35,124</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">1,38,730</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">18,09,178</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">74%</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">18%</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">8%</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1">Dec-08</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">6,50,684</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">3,97,317</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">1,76,097</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">12,24,098</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">53%</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">32%</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">14%</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1">Dec-09</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">11,55,555</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">3,43,246</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s1">2,18,795</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s1">17,17,595</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">It’s clear that due to changing markets, the desired allocation has deviated.<br>
+<br>
+You need to design a system that will suggest actions to ensure that the desired allocation percentages are equal to the actual percentages invested. The desired allocation percentage should be derived from the initial allocation made. If 5000, 2000, 3000 is initial allocation, then desired percentage is 50%, 20% and 30%. The rebalanced portfolio would look like this:</span></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p3"><span class="s1"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p4"><span class="s1"><b>Equity</b></span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p4"><span class="s1"><b>Debt</b></span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p4"><span class="s1"><b>Gold</b></span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p4"><span class="s1"><b>Total</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Dec-05</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">6,00,000</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">3,00,000</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">1,00,000</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">10,00,000</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">60%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">30%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">10%</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Dec-06</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">8,51,584</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">3,13,305</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">1,19,384</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">12,84,836</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">66%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">25%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">9%</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Dec-06 (Post Rebalancing)</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">7,70,901</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">3,85,451</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">1,28,484</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">12,84,836</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">60%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">30%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">10%</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Dec-07</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">12,08,811</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">4,12,295</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">1,48,602</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">17,69,708</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">68%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">23%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">9%</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Dec-07 (Post Rebalancing)</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">10,61,825</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">5,30,912</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">1,76,971</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">17,69,708</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">60%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">30%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">10%</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Dec-08</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">5,17,412</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">6,29,439</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">2,24,639</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">13,71,490</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">38%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">46%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">16%</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Dec-08 (Post Rebalancing)</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">8,22,894</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">4,11,447</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">1,37,149</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">13,71,490</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Allocation</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">60%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">30%</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">10%</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">100%</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p5"><span class="s1">Dec-09</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">14,51,396</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">3,56,116</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p5"><span class="s1">1,70,011</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p5"><span class="s1">19,77,523</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">Your program should take as input:<br>
+<b>1.</b> The money allocated in equity, debt and gold funds.<br>
+<b>2.</b> Monthly SIP payments.<br>
+<b>3.</b> Monthly change rate (loss or growth) for each type of fund.<br>
+<br>
+The output should be<br>
+<b>1.</b> Balanced amount of each fund for a certain month.<br>
+<b>2.</b> Rebalanced amount of each month if applicable.</span></p>
+<p class="p2"><span class="s1"><b>Input Commands</b><br>
+<br>
+There are 5 input commands defined to separate out the actions. Your input format will start with either of these commands i.e ALLOCATE, SIP, CHANGE, BALANCE, REBALANCE<br>
+<br>
+<b>ALLOCATE</b><br>
+<br>
+The ALLOCATE command receives the initial investment amounts for each fund.<br>
+<br>
+Format - ALLOCATE AMOUNT_EQUITY AMOUNT_DEBT AMOUNT_GOLD<br>
+Example- ALLOCATE 6000 3000 1000 means that an amount of 6000, 3000 and 1000 is initially invested in equity, debt and gold fund respectively.<br>
+<br>
+<b>SIP</b><br>
+<br>
+The SIP command receives the investment amount on a monthly basis for each fund.<br>
+<br>
+Format - SIP AMOUNT_EQUITY AMOUNT_DEBT AMOUNT_GOLD<br>
+Example - SIP 2000 1000 500 means a monthly payment of 2000, 1000 and 500 is done against each of equity, debt and gold funds respectivelty.<br>
+<br>
+<b>CHANGE</b><br>
+<br>
+The CHANGE command receives the monthly rate of change (growth or loss) for each fund type. A negative value represents a loss.<br>
+<br>
+Format - CHANGE AMOUNT_EQUITY AMOUNT_DEBT AMOUNT_GOLD MONTH<br>
+Example - CHANGE 8.00% -3.00% 7.00% APRIL means in the month of April equity received a growth of 8%, debt has taken a loss by 3% and gold received a growth of 7%.<br>
+<br>
+<b>BALANCE</b><br>
+<br>
+The BALANCE command receives a month name.<br>
+<br>
+Format - BALANCE MONTH<br>
+Example - BALANCE APRIL means - print the balance for each fund as on April month.<br>
+<br>
+<b>REBALANCE</b><br>
+<br>
+The REBALANCE command receives no additional inputs.<br>
+<br>
+Input format - REBALANCE<br>
+Example - REBALANCE - Rebalance happens compulsorily after 6 months in June and December. The REBALANCE command shows the last rebalanced amount for each fund at the time of rebalancing. If 6 months data is not available then print CANNOT_REBALANCE.<br>
+<br>
+Output format - EQUITY DEBT GOLD<br>
+Example - 10593 7898 2273</span></p>
+<p class="p2"><span class="s1"><b>Assumptions</b><br>
+<b>1.</b> Balances are always floored to the nearest integers.<br>
+<b>2.</b> The rebalancing happens on 6</span><span class="s2"><sup>th</sup></span><span class="s1"> (June) and 12</span><span class="s2"><sup>th</sup></span><span class="s1"> (December) month.<br>
+<b>3.</b> The allocation always happens from January, and SIP from February.</span></p>
+<p class="p2"><span class="s1"><b>SAMPLE INPUT-OUTPUT 1</b><br>
+<br>
+<b>INPUT:</b><br>
+ALLOCATE 6000 3000 1000<br>
+SIP 2000 1000 500<br>
+CHANGE 4.00% 10.00% 2.00% JANUARY<br>
+CHANGE -10.00% 40.00% 0.00% FEBRUARY<br>
+CHANGE 12.50% 12.50% 12.50% MARCH<br>
+CHANGE 8.00% -3.00% 7.00% APRIL<br>
+CHANGE 13.00% 21.00% 10.50% MAY<br>
+CHANGE 10.00% 8.00% -5.00% JUNE<br>
+BALANCE MARCH<br>
+REBALANCE<br>
+<br>
+<b>OUTPUT:</b><br>
+10593 7897 2272<br>
+23619 11809 3936<br>
+<br>
+<b>Portfolio (for reference):</b></span></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p4"><span class="s1"><b>Operation</b></span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p4"><span class="s1"><b>Equity</b></span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p4"><span class="s1"><b>Debt</b></span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p4"><span class="s1"><b>Gold</b></span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p4"><span class="s1"><b>Total</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">JANUARY - Allocation</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">6000</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">3000</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">1000</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">10000</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">JANUARY - After Market Change</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">6240</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">3300</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">1020</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">10560</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">FEBRUARY - Existing</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">6240</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">3300</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">1020</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">10560</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">FEBRUARY - After SIP</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">8240</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">4300</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">1520</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">14060</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">FEBRUARY - After Market Change</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">7416</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">6020</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">1520</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">14956</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">MARCH - Existing</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">7416</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">6020</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">1520</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">14956</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">MARCH - After SIP</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">9416</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">7020</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">2020</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">18456</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">MARCH - After Market Change</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">10593</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">7897</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">2272</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">20762</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">APRIL - Existing</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">10593</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">7897</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">2272</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">20762</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">APRIL - After SIP</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">12593</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">8897</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">2772</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">24262</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">APRIL - After Market Change</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">13600</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">8630</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">2966</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">25196</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">MAY - Existing</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">13600</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">8630</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">2966</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">25196</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">MAY - After SIP</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">15600</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">9630</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">3466</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">28696</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">MAY - After Market Change</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">17628</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">11652</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">3829</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">33109</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">JUNE - Existing</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">17628</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">11652</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">3829</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">33109</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">JUNE - After SIP</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">19628</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">12652</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">4329</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">36609</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">JUNE - After Market Change</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">21590</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">13664</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">4112</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">39366</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">JUNE - Rebalance</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">23619</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">11809</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">3936</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">39366</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><b>SAMPLE INPUT-OUTPUT 2</b><br>
+<br>
+<b>INPUT:</b><br>
+ALLOCATE 8000 6000 3500<br>
+SIP 3000 2000 1000<br>
+CHANGE 11.00% 9.00% 4.00% JANUARY<br>
+CHANGE -6.00% 21.00% -3.00% FEBRUARY<br>
+CHANGE 12.50% 18.00% 12.50% MARCH<br>
+CHANGE 23.00% -3.00% 7.00% APRIL<br>
+BALANCE MARCH<br>
+BALANCE APRIL<br>
+REBALANCE<br>
+<br>
+<b>OUTPUT:</b><br>
+15937 14552 6187<br>
+23292 16055 7690<br>
+CANNOT_REBALANCE<br>
+<br>
+<b>Portfolio (for reference):</b></span></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p4"><span class="s1"><b>Operation</b></span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p4"><span class="s1"><b>Equity</b></span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p4"><span class="s1"><b>Debt</b></span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p4"><span class="s1"><b>Gold</b></span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p4"><span class="s1"><b>Total</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">JANUARY - Allocation</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">8000</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">6000</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">3500</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">17500</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">JANUARY - After Market Change</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">8880</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">6540</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">3640</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">19060</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">FEBRUARY - Existing</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">8880</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">6540</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">3640</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">19060</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">FEBRUARY - After SIP</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">11880</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">8540</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">4640</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">25060</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">FEBRUARY - After Market Change</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">11167</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">10333</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">4500</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">26000</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">MARCH - Existing</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">11167</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">10333</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">4500</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">26000</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">MARCH - After SIP</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">14167</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">12333</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">5500</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">32000</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">MARCH - After Market Change</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">15937</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">14552</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">6187</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">36676</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td4">
+        <p class="p6"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">APRIL - Existing</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">15937</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">14552</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">6187</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">36676</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">APRIL - After SIP</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">18937</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">16552</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">7187</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">42676</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p5"><span class="s1">APRIL - After Market Change</span></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p5"><span class="s1">23292</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">16055</span></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p5"><span class="s1">7690</span></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p5"><span class="s1">47037</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">Input needs to be read from a text file, and output should be printed to console. Your program should execute and take the location to the test file as parameter.</span></p>
+</body>
+</html>
